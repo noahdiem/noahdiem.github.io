@@ -4,6 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+
+
+
+
 (function($) {
 
 	var settings = {
@@ -75,33 +81,33 @@
 			// Parallax background.
 
 				// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-					if (skel.vars.browser == 'ie'
-					||	skel.vars.isMobile)
-						settings.parallax = false;
+					//if (skel.vars.browser == 'ie'
+					//||	skel.vars.isMobile)
+						//settings.parallax = false;
 
-				if (settings.parallax) {
+				//if (settings.parallax) {
 
-					skel.change(function() {
+					//skel.change(function() {
 
-						if (skel.isActive('medium')) {
+						//if (skel.isActive('medium')) {
 
-							$window.off('scroll.strata_parallax');
-							$header.css('background-position', 'top left, center center');
+							//$window.off('scroll.strata_parallax');
+							//$header.css('background-position', 'top left, center center');
 
-						}
-						else {
+						//}
+						//else {
 
-							$header.css('background-position', 'left 0px');
+							//$header.css('background-position', 'left 0px');
 
-							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-							});
+							//$window.on('scroll.strata_parallax', function() {
+								//$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+							//});
 
-						}
+						//}
 
-					});
+					//});
 
-				}
+				//}
 
 		// Main Sections: Two.
 
